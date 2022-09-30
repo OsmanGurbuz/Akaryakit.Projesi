@@ -1,0 +1,149 @@
+ 
+
+
+ else if (akaryakitsatistipi == 'L' || akaryakitsatistipi == 'l')
+                {  
+                    
+                    if (lpgtank == 0)
+                    {
+                            Console.WriteLine("yakıt tankında hiç lpg yakıt yok");
+                            goto MENU;
+                    }
+                    else
+                    {
+                            Console.WriteLine("Ne kadarlık lpg yakıt alacaksınz ?");
+
+                            satismiktari = Convert.ToDouble(Console.ReadLine());
+                            if (lpgtank < satismiktari)
+                            {
+                                Console.WriteLine("Yakıt tankında {0} litre yakıt vardır ! işlem yapılamadı", lpgtank);
+                                goto MENU;
+
+                            }
+                            else if (satismiktari <= lpgtank)
+                            {
+                                lpgtank = lpgtank - satismiktari;
+                                Console.WriteLine("yakıt dolumu tamamlanmıştır");
+                                Console.WriteLine("yakıt tankında {0} miktar yakıt kaldı.", lpgtank);
+                            }
+                        
+
+                    }
+                    if (true)
+                    {
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("D,B,L dışında hatalı seçim yaptınız");
+                        goto AKARYAKITSATISI; 
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+else if (anamenüsecim =='3')
+                {
+
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (anamenüsecim == '3')
+{
+    Console.Clear();
+    Console.WriteLine("seçimizniz 3");
+    Console.WriteLine("Akaryakıt satış işlemleri");
+
+AKARYAKITSATISI:
+    Console.WriteLine("Akaryakıt tipini seçiniz [D,B,L]");
+    akaryakitsatistipi = Convert.ToChar(Console.ReadLine());
+
+    if (akaryakitsatistipi == 'D' || akaryakitsatistipi == 'd')
+    {
+      if (dizeltank == 0)
+      {
+      	 Console.WriteLine("yakıt tankında hiç dizel yakıt yok");
+         goto MENU;
+      }
+      else
+      {
+      	Console.WriteLine("Ne kadarlık dizel yakıt alacaksınz ?");
+
+        satismiktari = Convert.ToDouble(Console.ReadLine());
+        if (dizeltank < satismiktari)
+        {
+     		Console.WriteLine("Yakıt tankında {0} litre yakıt vardır ! işlem yapılamadı", dizeltank);
+                goto MENU;
+
+        }
+        else if (satismiktari <= dizeltank)
+        {
+                                dizeltank = dizeltank - satismiktari;
+                                Console.WriteLine("yakıt dolumu tamamlanmıştır");
+                                Console.WriteLine("yakıt tankında {0} miktar yakıt kaldı.", dizeltank);
+        }
+    }
+
+}
+
+
+
+
+                    else if (akaryakitsatistipi == 'b' || akaryakitsatistipi == 'B')
+                    {
+                        if (benzintank == 0)
+                        {
+                            Console.WriteLine("yakıt tankında hiç benzin yakıt yok");
+                            goto MENU;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Ne kadarlık benzin yakıt alacaksınz ?");
+
+                            satismiktari = Convert.ToDouble(Console.ReadLine());
+                            if (benzintank < satismiktari)
+                            {
+                                Console.WriteLine("Yakıt tankında {0} litre yakıt vardır ! işlem yapılamadı", benzintank);
+                                goto MENU;
+
+                            }
+                            else if (satismiktari <= benzintank)
+                            {
+                                benzintank = benzintank - satismiktari;
+                                Console.WriteLine("yakıt dolumu tamamlanmıştır");
+                                Console.WriteLine("yakıt tankında {0} miktar yakıt kaldı.", benzintank);
+                            }
+                        }
